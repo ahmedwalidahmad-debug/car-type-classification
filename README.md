@@ -16,40 +16,19 @@ Classify car images into 196 different car makes/models/years by comparing the p
 - InceptionV3
 - EfficientNetB0
 
----
-
-📂 Repository Structure
-
-/ (root)
-├── README.md
-├── TEAM.md
-├── data/
-│   └── download_data.sh
-├── notebooks/
-│   └── EDA.ipynb
-├── src/
-│   ├── data/
-│   │   └── preprocess.py
-│   ├── models/
-│   │   ├── train.py
-│   │   ├── evaluate.py
-│   │   └── gradcam.py
-│   └── gui/
-│       └── app.py
-├── results/
-│   ├── confusion_matrix.png
-│   └── gradcam_examples/
-└── docs/
-    └── evaluation_report.pdf
 
 ---
 
 🧠 Models Used
 
-Model| Notes
-ResNet50| Strong CNN model using residual blocks (transfer learning)
-InceptionV3| Extracts multi-scale features using inception blocks (transfer learning)
-EfficientNetB0| Lightweight and fast baseline model
+
+
+| Model                | Notes       | 
+| -------------------- | ----------- | 
+| ResNet50             | Strong CNN model using residual blocks (transfer learning)    | 
+|InceptionV3           |Extracts multi-scale features using inception blocks (transfer learning)       | 
+| EfficientNetB0       |Lightweight and fast baseline model | 
+
 
 ---
 
