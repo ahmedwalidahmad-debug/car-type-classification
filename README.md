@@ -1,5 +1,6 @@
 # car-type-classification
 Deep learning project for fine-grained car type classification using Stanford Cars dataset. Includes training of ResNet50, InceptionV3, EfficientNetB0, evaluation (accuracy, confusion matrix, Grad-CAM), and a Streamlit GUI for predictions
+
 🚗 Car Type Classification — Stanford Cars Project
 
 This repository contains a complete deep learning pipeline for fine-grained car type classification using the Stanford Cars Dataset.
@@ -22,24 +23,37 @@ Classify car images into their make/model/year (196 classes) and compare the per
 📂 Repository Structure
 
 / (root)
+
 ├── README.md
+
 ├── TEAM.md
+
 ├── data/
 │   └── download_data.sh
+
 ├── notebooks/
 │   └── EDA.ipynb
+
 ├── src/
 │   ├── data/
+
 │   │   └── preprocess.py
+
 │   ├── models/
+
 │   │   ├── train.py
+
 │   │   ├── evaluate.py
+
 │   │   └── gradcam.py
 │   └── gui/
 │       └── app.py
+
 ├── results/
 │   ├── confusion_matrix.png
+
 │   └── gradcam_examples/
+
 └── docs/
     └── evaluation_report.pdf
 
