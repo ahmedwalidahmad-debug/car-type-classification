@@ -143,4 +143,6 @@ A short demo video (if added) is inside docs/.
 
 👥 Team Members
 
-Names & responsibilities are included in TEAM.md.
+👥 Team Members  
+See full team details in [TEAM.md](TEAM.md)
+
