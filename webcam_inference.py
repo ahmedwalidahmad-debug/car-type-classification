@@ -1,9 +1,15 @@
+"""
+Real-time Car Type Classification using Webcam
+Models: ResNet50 / InceptionV3
+Application: Automotive recognition systems
+"""
+
 import cv2
 import tensorflow as tf
 import numpy as np
 
-# Load trained model
-model = tf.keras.models.load_model("models/your_model.h5")
+# Load trained car classification model
+model = tf.keras.models.load_model("models/resnet50_cars.h5")
 
 cap = cv2.VideoCapture(0)
 
@@ -21,7 +27,7 @@ while True:
 
     cv2.putText(
         frame,
-        f"Prediction: {class_id}",
+        f"Predicted Car Class: {class_id}",
         (10, 40),
         cv2.FONT_HERSHEY_SIMPLEX,
         1,
@@ -29,7 +35,7 @@ while True:
         2
     )
 
-    cv2.imshow("Webcam Inference", frame)
+    cv2.imshow("Real-Time Car Recognition", frame)
 
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
